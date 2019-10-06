@@ -1,0 +1,20 @@
+{
+  "name": "bugo-font-awesome",
+  "version": "1.0.0",
+  "description": "Add Font Awesome icons to your theme",
+  "main": "index.js",
+  "repository": "https://github.com/bugoio/bugo-font-awesome.git",
+  "author": "Matt Antone <matt.antone@gmai.com>",
+  "license": "MIT",
+  "scripts": {
+    "build" : "gulp installFontAwesome"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-ext-replace": "^0.3.0",
+    "gulp-flatten": "^0.4.0"
+  }
+}
