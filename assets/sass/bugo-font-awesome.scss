@@ -1,0 +1,22 @@
+/**
+  * BUGO FONT AWESOME
+  **/
+  @import "bugo-font-awesome-varaibles";
+
+.bugo-icon {
+  svg {
+    @include ms-respond(max-width,$bugo-icon-size);
+  }
+
+  &.small {
+    svg {
+      @include ms-respond(max-width,$bugo-icon-size-sm);
+    }
+  }
+
+  &.large {
+    svg {
+      @include ms-respond(max-width,$bugo-icon-size-lg);
+    }
+  }
+}

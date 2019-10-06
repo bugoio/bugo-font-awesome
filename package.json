@@ -7,7 +7,7 @@
   "author": "Matt Antone <matt.antone@gmai.com>",
   "license": "MIT",
   "scripts": {
-    "build" : "gulp installFontAwesome"
+    "build" : "gulp copyAsTemplates && gulp copySVG"
   },
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.11.2"
