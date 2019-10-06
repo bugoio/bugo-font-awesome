@@ -8,13 +8,13 @@
     @include ms-respond(max-width,$bugo-icon-size);
   }
 
-  &.small {
+  &.icon-small {
     svg {
       @include ms-respond(max-width,$bugo-icon-size-sm);
     }
   }
 
-  &.large {
+  &.icon-large {
     svg {
       @include ms-respond(max-width,$bugo-icon-size-lg);
     }
