@@ -1,3 +1,1 @@
-<span class="bugo-icon icon-{{ range .Params }}{{ . }} {{ end }}">
-    {{ partial (printf "icons/%s" ( .Get 0 ) ) }}
-</span>
+{{ partial "icon" .Params }}
