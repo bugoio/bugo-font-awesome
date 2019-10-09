@@ -1,7 +1,12 @@
 /**
   * BUGO FONT AWESOME
   **/
-  @import "bugo-font-awesome-vars";
+
+@import "bugo-font-awesome-vars";
+
+@debug "Loading Bugo Font Awesome SASS";
+@import "custom-variables";
+
 
 .bugo-icon {
   svg {
