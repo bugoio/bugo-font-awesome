@@ -12,7 +12,6 @@ function copyAsTemplates() {
 function copyAsSVG(){
   return src('node_modules/@fortawesome/**/svgs/**/*.svg')
     .pipe(flatten())
-    .pipe(ext_replace('.html'))
     .pipe(dest('static/icons/'));
 }
 

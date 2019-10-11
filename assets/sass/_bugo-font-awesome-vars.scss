@@ -3,6 +3,6 @@
   **/
 
 
-$bugo-icon-size: 2;
-$bugo-icon-size-sm: 1;
-$bugo-icon-size-lg: 4;
+  $bugo-icon-size: $global-icon-size;
+  $bugo-icon-size-sm: $global-icon-size-sm;
+  $bugo-icon-size-lg: $global-icon-size-lg;
