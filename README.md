@@ -76,7 +76,7 @@ Add Fontawesome icons to your markdown content using Hugo shortcodes. The shortc
 
 You can add classes to your
 
-```GO
+```Go
 {{ partial "icon" (slice "bomb" "icon-small" "other-class" "...")}}
 ```
 
