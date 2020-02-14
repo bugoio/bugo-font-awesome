@@ -99,7 +99,7 @@ The sizes can be controlled using SASS varaibles
 
 ```scss
 // The numbers are used by Bugo to display the icons relateive to the font size;
-$bugo-icon-size: 2;
-$bugo-icon-size-sm: 1;
-$bugo-icon-size-lg: 4;
+$fa-icon-size:      $global-icon-size;
+$fa-icon-size-sm:   $global-icon-size-sm;
+$fa-icon-size-lg:   $global-icon-size-lg;
 ```
