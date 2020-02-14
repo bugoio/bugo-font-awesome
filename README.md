@@ -35,7 +35,7 @@ module:
 
 ### 4. Add the stylesheets
 
-Add the stylesheets to your ```<head>``` tag. Bugo modules uses a partial to add all .scss files except for SASS partials (files using the "_" prefix. like _variables.scss). You can skip this if you're using a Bugo Theme. The theme already does this.
+You can skip this if you're using a Bugo Theme. The theme already does this. Otherwise we need to add it. We'll use Hugo Pipes to process the SASS files. Add the code below to the ```<head``` tag. 
 
 ```GO
   <!-- Process SASS Files. https://github.com/bugoio/bugo-sass-utilities.  -->
