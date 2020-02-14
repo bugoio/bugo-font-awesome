@@ -37,7 +37,7 @@ module:
 
 You can skip this if you're using a Bugo Theme. The theme already does this. Otherwise we need to add it. We'll use Hugo Pipes to process the SASS files. Add the code below to the ```<head``` tag. 
 
-```golang
+```handlebars
   <!-- Process SASS Files using Hugo Pipes  -->
   {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/myscss")) }}
   {{ $stylesheet := resources.Get "sass/main.scss" | resources.ToCSS $options }}
@@ -60,7 +60,7 @@ The Bugo templates will render your icon will a wrapper around it.
 
 Add Fontawesome icons to your templates using a partial. Just call the partial using the icon name.
 
-```GO
+```handlebars
 {{ partial "icon" (slice "bomb")}}
 ```
 
@@ -68,7 +68,7 @@ Add Fontawesome icons to your templates using a partial. Just call the partial u
 
 Add Fontawesome icons to your markdown content using Hugo shortcodes. The shortcode below adds the Font Awesome bomb icon.
 
-```GO
+```handlebars
 {{<icon bomb>}}
 ```
 
