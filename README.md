@@ -97,7 +97,7 @@ Icons are have a default size and can be modifed by including the two classes be
 
 The sizes can be controlled using SASS varaibles
 
-```
+```sass
 // The numbers are used by Bugo to display the icons relateive to the font size;
 $bugo-icon-size: 2;
 $bugo-icon-size-sm: 1;
