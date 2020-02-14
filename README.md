@@ -38,8 +38,9 @@ module:
 You can skip this if you're using a Bugo Theme. The theme already does this. Otherwise we need to add it. We'll use Hugo Pipes to process the SASS files. Add the code below to the ```<head``` tag. 
 
 ```GO
-  <!-- Process SASS Files. https://github.com/bugoio/bugo-sass-utilities.  -->
-  {{ $stylesheet := partial "utilities/bugo-ititstylesheets" . }}
+  <!-- Process SASS Files using Hugo Pipes  -->
+  {{ $options := (dict "targetPath" "style.css" "outputStyle" "compressed" "enableSourceMap" true "includePaths" (slice "node_modules/myscss")) }}
+  {{ $stylesheet := resources.Get "sass/main.scss" | resources.ToCSS $options }}
   <link rel="stylesheet" href="{{ $stylesheet }}" media="screen" />
 ```
 
