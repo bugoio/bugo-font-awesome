@@ -2,7 +2,6 @@
 
 Add icons to your Hugo Templates and Content. The shortcode below here will display the Font Awesome bomb icon. https://fontawesome.com/icons/bomb?style=solid
 
-
 ## Installation
 
 Before starting check the list below:
@@ -11,17 +10,21 @@ Before starting check the list below:
 * Your Hugo project must be in a git repository
 * Your Hugo project must be a Hugo Module
 
-## If your project isn't a Hugo Module.
+### 1. If your project isn't a Hugo Module.
+
 ```BASH
 hugo mod init
 ```
 
-Get this module.
+### 2. Get this module.
+
 ```BASH
 hugo mod get github.com/bugoio/bugo-font-awesome
 ```
+### 3. Add module to your project
 
-Add it to your Hugo config file (shown in YAML).
+Add the module to your Hugo config file (shown in YAML).
+
 ```YAML
 module:
   imports:
@@ -30,11 +33,13 @@ module:
     path: github.com/bugoio/bugo-font-awesome
 ```
 
+### 4. Add the stylesheets
+
 Add the stylesheets to your ```<head>``` tag. Bugo modules uses a partial to add all .scss files except for SASS partials (files using the "_" prefix. like _variables.scss). You can skip this if you're using a Bugo Theme. The theme already does this.
 
 ```GO
   <!-- Process SASS Files. https://github.com/bugoio/bugo-sass-utilities.  -->
-  {{ $stylesheet := partial "utilities/bugo-stylesheets" . }}
+  {{ $stylesheet := partial "utilities/bugo-ititstylesheets" . }}
   <link rel="stylesheet" href="{{ $stylesheet }}" media="screen" />
 ```
 
